@@ -1,3 +1,11 @@
+基于mmkv1.2.14源码做的一些修改
+
+修复了部分低端手机：如android6.0手机找不到so库的问题
+
+csdn：https://blog.csdn.net/pengbo6665631/article/details/129391587
+
+
+
 [![license](https://img.shields.io/badge/license-BSD_3-brightgreen.svg?style=flat)](https://github.com/Tencent/MMKV/blob/master/LICENSE.TXT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tencent/MMKV/pulls)
 [![Release Version](https://img.shields.io/badge/release-1.2.13-brightgreen.svg)](https://github.com/Tencent/MMKV/releases)
