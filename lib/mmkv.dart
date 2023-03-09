@@ -159,9 +159,11 @@ class MMKV {
       String? groupDir,
       MMKVLogLevel logLevel = MMKVLogLevel.Info}) async {
     WidgetsFlutterBinding.ensureInitialized();
-    nativeLibraryDirectory = await _channel.invokeMethod("getNativeLibraryDirectory");
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    packageName = packageInfo.packageName;
+    if (Platform.isAndroid) {
+      nativeLibraryDirectory = await _channel.invokeMethod("getNativeLibraryDirectory");
+      PackageInfo packageInfo = await PackageInfo.fromPlatform();
+      packageName = packageInfo.packageName;
+    }
 
     if (rootDir == null) {
       final path = await getApplicationDocumentsDirectory();
