@@ -756,7 +756,6 @@ DynamicLibrary _getAndroidDynamicLibrary(String libraryName) {
 DynamicLibrary _getLibraryByNativeDirectory(String libraryName) {
   try {
     String path = '${MMKV.nativeLibraryDirectory}/$libraryName';
-    print(path);
     return DynamicLibrary.open(path);
   } catch (_) {
     return _getLibraryByDataPath(libraryName);
@@ -766,7 +765,6 @@ DynamicLibrary _getLibraryByNativeDirectory(String libraryName) {
 DynamicLibrary _getLibraryByDataPath(String libraryName) {
   try {
     String path = '/data/data/${MMKV.packageName}/lib/$libraryName';
-    print(path);
     return DynamicLibrary.open(path);
   } catch (_) {
     rethrow;
