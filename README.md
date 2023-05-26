@@ -4,7 +4,7 @@
 
 csdn：https://blog.csdn.net/pengbo6665631/article/details/129391587
 
-
+相关问题issue：https://github.com/Tencent/MMKV/issues/1034
 
 [![license](https://img.shields.io/badge/license-BSD_3-brightgreen.svg?style=flat)](https://github.com/Tencent/MMKV/blob/master/LICENSE.TXT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tencent/MMKV/pulls)
